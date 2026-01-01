@@ -1,11 +1,13 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moo+Lah+Lah&family=Mystery+Quest&display=swap');
+
 
 /* ---------- ESTILOS GERAIS ---------- */
 body {
     background-color: rgb(201, 176, 224);
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* ---------- CABEÇALHO ---------- */
@@ -13,10 +15,10 @@ header {
     background-color: rgb(231, 216, 245);
     padding: 20px;
     text-align: center;
+    font-family: cursive;
 }
 
-header > h1 {
-    font-family: 'Mystery Quest', cursive;
+header>h1 {
     font-size: 50px;
     color: rgb(90, 8, 167);
     margin: 0;
@@ -31,7 +33,7 @@ nav {
     flex-wrap: wrap;
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: blueviolet;
     padding: 5px 10px;
@@ -39,7 +41,7 @@ nav > a {
     transition: background-color 0.3s ease;
 }
 
-nav > a:hover {
+nav>a:hover {
     background-color: rgb(205, 167, 241);
 }
 
@@ -91,7 +93,7 @@ main section p {
 
 /* --- Tablets (até 900px) --- */
 @media (max-width: 900px) {
-    header > h1 {
+    header>h1 {
         font-size: 40px;
     }
 
@@ -115,7 +117,7 @@ main section p {
         padding: 15px;
     }
 
-    header > h1 {
+    header>h1 {
         font-size: 32px;
     }
 
@@ -138,34 +140,37 @@ main section p {
     }
 
     main section h2:hover {
-        background-color: transparent; /* Remove hover em mobile */
+        background-color: transparent;
+        /* Remove hover em mobile */
         padding: 0;
     }
 }
 
-footer{
+footer {
     background-color: rgb(231, 216, 245);
     padding: 10px 0px;
-    
+
 }
 
-footer>h1{
+footer>h1 {
     font-family: monospace;
     color: rgb(90, 8, 167);
     text-align: center;
 }
 
 .img-box {
-    width: 250px;        
-    height: 200px;       
-    overflow: hidden;    /* corta o que sair do limite */
-    border-radius: 10px; 
-    margin: 0 auto 20px; 
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    /* corta o que sair do limite */
+    border-radius: 10px;
+    margin: 0 auto 20px;
 }
 
 .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* mantém proporção e preenche sem distorcer */
+    object-fit: cover;
+    /* mantém proporção e preenche sem distorcer */
     display: block;
 }
