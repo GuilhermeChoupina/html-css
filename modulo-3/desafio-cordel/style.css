@@ -48,12 +48,17 @@ section {
 }
 
 .imagem {
-    background-color: rgb(69, 65, 65);
+    background-image:  url('/modulo-3/desafio-cordel/imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
     color: white;
 }
 
 .imagem p {
-    width: 400px;
+    width: 200px;
     background-color: rgba(0, 0, 0, 0.247);
 }
 
