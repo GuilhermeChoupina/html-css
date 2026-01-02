@@ -7,7 +7,6 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgrey;
 }
 
 header {
@@ -53,14 +52,36 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+    color: white;
+}
+
+#img1 {
+    background-image:  url('/modulo-3/desafio-cordel/imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#img2 {
+    background-image:  url('/modulo-3/desafio-cordel/imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
 }
 
 .imagem p {
+    padding: 0px 10px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-radius: 10px;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.247);
+    background-color: rgba(0, 0, 0, 0.279);
 }
+
+
 
 
 
