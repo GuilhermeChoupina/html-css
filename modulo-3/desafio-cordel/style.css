@@ -76,14 +76,14 @@ section p {
 }
 
 #img1 {
-    background-image: url('/modulo-3/desafio-cordel/imagens/background001.jpg');
+    background-image: url('../desafio-cordel/imagens/background001.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: inset 3px 3px 10px 0px black;
 }
 
 #img2 {
-    background-image: url('/modulo-3/desafio-cordel/imagens/background002.jpg');
+    background-image: url('../desafio-cordel/imagens/background002.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: inset 6px 6px 12px 0px black;
