@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cestado {
+            background-color: blanchedalmond;
+        }
+
+        .cpopulacao {
+            background-color: aquamarine;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <table>
+        <colgroup>
+            <col class="cestado">
+            <col class="cpopulacao">
+        </colgroup>
+        <caption>Populaçao da Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linha">
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr class="linha">
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr class="linha">
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr class="linha">
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr class="linha">
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr class="linha">
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+        </tbody>
 </body>
 </html>
