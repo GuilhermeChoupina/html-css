@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>teste de formúlario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="15" size="30" placeholder="Nome de usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="8" size="10" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
+
+<!--
+- minlenght e maxlenght = mínimo e máximo de caracters
+- required = campo obrigatório
+- size = tamanho da caixa
+- label = pergunta para o usuário
+- input = resposta do usuário
+- placeholder = info que aparece dentro da box de preenchimento (dica)
+- autocomplete no input = completa exatamente o que pede aquela box (usuário = username)
+-->

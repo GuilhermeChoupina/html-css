@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
+   
+    <form action="cadastro.php" method="get" autocomplete="off">
 
-    <form action="cadastro.php" autocomplete="off"> <!--desligar o autocomplete-->
-
-        <p><label for="idnome">Nome:</label> 
+        <p><label for="idnome">Nome:</label>
             <input type="text" name="nome" id="idnome">
         </p>
 
@@ -22,6 +24,19 @@
         </p>
 
     </form>
-    
+
 </body>
+
 </html>
+
+ <!--desligar o autocomplete-->
+    <!--metodo get:
+    dados sem ser sencíveis como dados e senha e link compartilhado / até 3 mil bytes (3k letras)
+
+    metodo post:
+    (esconde as informações da url) ir em inspecionar -> network -> header  
+    dados sencíveis / mais de 3k bytes / envio de arquivo
+
+    label = pergunta para o usuário
+    input = resposta do usuário
+    -->
