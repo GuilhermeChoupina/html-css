@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.1" required placeholder="0 a 10">
+        </p>
+        <p>
+            <label for="mes">Período letivo:</label>
+            <input type="month" name="mes" id="mes">
+        </p>
+        <p>
+            <label for="dia">Dia da prova:</label>
+            <input type="date" name="dia" id="dia" value="2025-03-23">
+        </p>
+        <p>
+            <label for="hora">Horário da prova:</label>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
+
+<!--
+- minlenght e maxlenght = mínimo e máximo de caracters
+- required = campo obrigatório
+- size = tamanho da caixa
+- label = pergunta para o usuário
+- input = resposta do usuário
+- placeholder = info que aparece dentro da box de preenchimento (dica)
+- autocomplete no input = completa exatamente o que pede aquela box (usuário = username)
+
+- input numer = aceita somente números
+- para numeros no input, usar somente "max" ou "min" (ex: notas)
+- Step = pula os numeros de acordo com o que deseja (0.1 em caso de notas)
+- value = valor pré definido na box
+- input mounth = mes e ano
+- input date = dia, mes e ano
+- input time = horario
+-->
