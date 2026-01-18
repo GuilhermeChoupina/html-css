@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 05</title>
+</head>
+<body>
+
+    <h1>form 5</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebol</label> <br>
+            <input type="checkbox" name="futa" id="futa"> <label for="futa">Futebol Americano</label> <br>
+            <input type="checkbox" name="bas" id="bas"> <label for="bas">Basquete</label> <br>
+            <input type="checkbox" name="hip" id="hip"> <label for="hip">Hipismo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexomas"> <label for="sexomas">Masculino</label><br>
+            <input type="radio" name="sexo" id="sexofem"> <label for="sexofem">feminino</label>
+        </fieldset>
+        
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!-- INPUT:CHECKBOX - CAIXINHA DE MARCAR E DESMARCAR
+INPUT:RADIO - para sexo (o mesmo nome porém o id muda para cada opção)
+CHECKED - para ja iniciar com a box marcada em alguma opção 
+-->

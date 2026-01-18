@@ -30,13 +30,7 @@
 </html>
 
  <!--desligar o autocomplete-->
-    <!--metodo get:
-    dados sem ser sencíveis como dados e senha e link compartilhado / até 3 mil bytes (3k letras)
-
-    metodo post:
-    (esconde as informações da url) ir em inspecionar -> network -> header  
-    dados sencíveis / mais de 3k bytes / envio de arquivo
-
-    label = pergunta para o usuário
-    input = resposta do usuário
+    <!--GET anexa os dados à URL (visíveis, limitados), ideal para buscas; 
+    
+        POST os envia no corpo da requisição (invisíveis, sem limite), ideal para formulários de login, cadastros ou envio de arquivos sensíveis, pois é mais seguro para dados privados e grandes volumes
     -->
