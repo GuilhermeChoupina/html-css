@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>form 7</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msn">Mensagem: </label>
+            <textarea name="msn" id="msn" cols="30" rows="10" placeholder="Ola mundo"></textarea>
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!--
+SELECT - abre a opção de lista
+OPTGROUP - para agrupar os elementos da lista caso queire.
+OPTION - opções da lista (pode também add "value" (sigla)para o "option" 
+
+DATALIST - add uma lista de profissão, porém precisa add uma tag "list" no input e declarar uma "id" com os mesmo nome em ambos
+
+TEXTAREA - area de mensagem, podendo também mexer em seu tamanho em "cols" e "rows" 
+-->
