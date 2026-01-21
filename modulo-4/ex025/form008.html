@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 08</title>
+</head>
+<body>
+
+     <h1>form 8</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="num1">Numero 1: </label>
+            <input type="number" name="num1" id="num1" min="0" max="50" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Numero 2: </label>
+            <input type="number" name="num2" id="num2" min="0" max="50" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="soma">Soma: </label>
+            <output nome="soma" id="soma">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!-- 
+- oninput="soma.innerHTML = Number(num1.value) + Number(num2.value) - para somar somente na tela 
+- 
+-->
