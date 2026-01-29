@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        .container {
+            background-color: rgb(255, 127, 249);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: rgb(119, 226, 167);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+Flex-wrap = Empacotamento 
+- Flex-wrap: nowrap = encolhimento, se adaptando ao container (caso não der ele quebra) mas nãp é para quebrar
+- Flex-wrap: wrap = Quando diminuir além do container ele quebra para baixo ou no sentido do cross-axis
+- Flex-wrap: wrap-reverse = quando diminuir além do container ele vai para cima (contrário da wrap)
+SEMPRE VÃO NO SENTIDO DO CROSS-AXIS, SEMPRE ACIMA DO QUADRADO QUE INICIA A LINHA
+
+FLEX-FLOW: ROW NOWRAP
+
+FLEX: AUTO NO FILHO = Quebra para baixo cobrindo toda a width
+-->
