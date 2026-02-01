@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+
+        .container {
+            background-color: rgb(111, 119, 238);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: rgb(216, 102, 49);
+            text-align: center;
+            padding: 20px;
+            flex-basis: 200px;
+        }
+
+        #i1 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #i2 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #i3 {
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+flex-shrink = encolher - diminuir
+flex-grow = aumentar - crescer
+
+por padrão:
+shrink = 1 - pode encolher
+grow = 0 - nao pode aumentar
+
+somente nos itens.
+
+
+
+-->

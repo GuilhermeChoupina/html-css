@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+
+        .container {
+            background-color: rgb(111, 119, 238);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: rgb(216, 102, 49);
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+            flex: 0 1 150px;
+        }
+
+        #i2 {
+            flex: 2 0 150px;
+        }
+
+        #i3 {
+            flex: 1 2 150px;
+        }
+
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+ordem para o flex: 
+grow - shrink - basis
+0 - 1 - 150px
+
+flex: 0 1 auto ou flex: initial = valores padrão 
+
+flex: 0 0 auto ou flex: none = nao ser flexivel
+
+flex: 1 1 auto ou flex: auto = totalmente flexivel 
+
+flex: 3 ou flex: 3 1 auto = somente o 3 vale para o grow e o resto é valor padrão  
+-->
