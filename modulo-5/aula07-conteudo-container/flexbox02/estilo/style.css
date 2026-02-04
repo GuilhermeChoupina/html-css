@@ -1,2 +1,69 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+header, .normal {
+    padding: 20px;
+}
+
+header p, .normal p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+h1, h2 {
+    text-align: justify;
+}
+
+.flex-content h2 {
+    padding: 10px 0px;
+}
+
+.flex-content {
+    background-color: rgb(216, 215, 215);
+    padding: 20px;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.media {
+    flex: 1 0 500px;
+}
+
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
