@@ -10,22 +10,20 @@
         }
 
         .container {
-            border: 3px solid black;
+            border: 5px solid black;
             background-color: rgb(165, 183, 201);
-            height: 250px;
+            height: 500px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 5px;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
         }
 
         .item {
-            border: 1px solid black;
+            border: 2px solid black;
             padding: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: blue;
         }
 
     </style>
@@ -44,3 +42,28 @@
     
 </body>
 </html>
+
+<!--
+            ---VERTICAL:---
+align-itens: stretch = esticar até o tamanho máximo
+align-itens: start = cola na parte de cima
+align-itens: center = alinha o item no centro do container
+align-itens: end = no final do container
+
+align-content: start = por padrão, no início do caderno 
+align-content: center = ao centro da grid
+align-content: end = ao final da grid
+
+            ---HORIZONTAL---
+justify-itens: stretch = (padrão) estica os itens ao longo do container
+justify-itens: start = cola no começo da linha
+justify-itens: center = centro da linha
+justify-itens: end = cola no final da linha
+
+justify-content: stretch = (padrão) estica os itens ao longo do container
+justify-content: start = cola no começo da linha
+justify-content: center = centro da linha
+justify-content: end = cola no final da linha
+ 
+ 
+-->
