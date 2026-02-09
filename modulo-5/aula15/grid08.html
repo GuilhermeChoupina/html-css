@@ -12,18 +12,17 @@
         .container {
             border: 5px solid black;
             background-color: rgb(165, 183, 201);
+            height: 250px;
             display: grid;
-            grid-template: auto auto auto / auto auto auto;
-            place-items: start start;
-            place-content: center start;
+            grid-template: repeat(3, 100px) / repeat(3, auto);
+            place-items: start center;
+            place-content: space-between end;
+            gap: 10px;
         }
 
         .item {
             border: 2px solid rgb(156, 76, 76);
             padding: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
     </style>
@@ -44,16 +43,3 @@
     
 </body>
 </html>
-
-<!--
-            --- Grid --- 
-
-- grid-auto-row: 100px; = determina que toda linha que for add ja estará editada assim como as outras
-- grid-auto-column: 100px; = determina que toda coluna que for add ja estará editada assim como as outras
-- place-items: simplifica os aligns-itens e justify-itens
-- place-content: simplifica os aligns-content e justify-content
-- grid-template: simplifica os grid-templates-row e grid-template-column 
-
-- AS ORDENS SEMPRE SERAO PRIMEIRO OS ALIGNS DEPOIS OS JUSTIFY
-- E PARA O GRID-TEMPLATE, PRIMEIRO ROW DEPOIS COLUMN
--->
