@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        body {
+            background-color: rgb(126, 150, 134);
+        }
+
+        .container {
+            border: 5px solid black;
+            background-color: rgb(165, 183, 201);
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+        }
+
+        .item {
+            border: 2px solid rgb(156, 76, 76);
+            padding: 5px;
+        }
+
+        #cx1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        #cx2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #cx3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item" id="cx1">Area 1</div>
+        <div class="item" id="cx1">Area 1</div>
+        <div class="item" id="cx1">Area 1</div>
+        <div class="item" id="cx1">Area 1</div>
+        <div class="item" id="cx2">Area 2</div>
+        <div class="item" id="cx2">Area 2</div>
+        <div class="item" id="cx3">Area 3</div>
+        <div class="item" id="cx3">Area 3</div>
+        <div class="item" id="cx2">Area 2</div>
+        <div class="item" id="cx2">Area 2</div>
+        <div class="item" id="cx3">Area 3</div>
+        <div class="item" id="cx3">Area 3</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+----------SOMENTE PARA OS ITENS----------
+
+            -----grid-row-start-----
+
+
+            -----grid-row-end-----
+            -----grid-column-start-----
+            -----grid-row-end-----
+-->

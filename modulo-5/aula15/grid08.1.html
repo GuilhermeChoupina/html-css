@@ -14,9 +14,10 @@
             background-color: rgb(165, 183, 201);
             display: grid;
             gap: 10px;
-            grid-template: repeat(3, 80px) / repeat(3, 120px);
+            /*grid-template: repeat(3, 80px) / repeat(3, 120px);*/
+            grid-template-columns: 100px 20% 1fr 2fr;
             grid-auto-rows: 80px;
-            grid-auto-flow: column;
+            grid-auto-flow: row;
             grid-auto-columns: 120px;
         }
 
