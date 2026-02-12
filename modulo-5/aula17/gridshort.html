@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: bisque;
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+            border: 3px solid green;
+        }
+
+        .cx1 {
+            background-color: rgb(174, 130, 214);
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .cx2 {
+            background-color: rgb(200, 187, 212);
+            grid-row: 2/4;
+            grid-column: 3/5;
+        }
+
+        .cx3 {
+            background-color: rgb(132, 177, 177);
+            grid-area: 1/1/2/5;
+        }
+
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <div class="cx1">Caixa 1</div>
+        <div class="cx2">Caixa 2</div>
+        <div class="cx3">Caixa 3</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+Span = informando quantas linhas pulam 
+
+grid-row = grid-row: 1 / 4; (maneira simplificada)  
+
+grid-column = grid-column: 3 / 5; (maneira simplificada) 
+
+grid-area: 1/1/4/3; (row-start/column-start/row-end/column-end)
+-->
